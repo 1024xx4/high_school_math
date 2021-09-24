@@ -39,3 +39,30 @@ def dec2hex(target):
     # Returns the elements of the list in reverse order.
     amari.reverse()
     return amari
+
+
+# List 1-3 From m-ary to decimal.
+def any2dec(target, m):
+    n = len(target) - 1  # Maximum value of the index.
+    sum = 0  # Value converted to decimal.
+
+    # Repeat for the number of charactors.
+    for i in range(len(target)):
+        if target[i] == 'A':
+            num = 10
+        elif target[i] == 'B':
+            num = 11
+        elif target[i] == 'C':
+            num = 12
+        elif target[i] == 'D':
+            num = 13
+        elif target[i] == 'E':
+            num = 14
+        elif target[i] == 'F':
+            num = 15
+        else:
+            num = int(target[i])
+
+        sum += (m ** n) * num  # Sum "value of each row multiplied by n of m"
+        n -= 1  # Reduce the weight by one.
+    return sum
