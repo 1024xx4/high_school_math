@@ -66,3 +66,36 @@ def any2dec(target, m):
         sum += (m ** n) * num  # Sum "value of each row multiplied by n of m"
         n -= 1  # Reduce the weight by one.
     return sum
+
+
+# List 1-4 Convert from decimal to binary(real number compatible version).
+def dec2bin_ex(target):
+    # Divide the target into an integer part and a decimal part.
+    i = int(target)  # 整数部
+    f = target - i  # 小数部
+
+    # Convert integer part to binary number.
+    a = []  # List to put the surplus.
+
+    # Until the quotient of division becomes 0
+    while i != 0:
+        a.append(i % 2)  # Surplus.
+        i = i // 2  # Quotient.
+
+    # Reverse the elements.
+    a.reverse()
+
+    # Convert decimals part to binary.
+    b = []  # List to put the integer part.
+    n = 0  # Number of repetitions.
+
+    # Until the decimals part after multiplying by 2 becomes 0.
+    while (f != 0):
+        temp = f * 2  # decimal part 2.
+        b.append(int(temp))  # Integer part.
+        f = temp - int(temp)  # Decimal part.
+        n += 1
+        if (n >= 10):
+            break
+    # Value converted to binary number.
+    return a, b
