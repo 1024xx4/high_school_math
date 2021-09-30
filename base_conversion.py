@@ -99,3 +99,10 @@ def dec2bin_ex(target):
             break
     # Value converted to binary number.
     return a, b
+
+# List 2-1 Decompose color information into r, g, b.
+def get_pixel_color(c):
+    r = (c & 0x00FF0000) >> 16 # Red.
+    g = (c & 0x0000FF00) >> 8 # Green.
+    b = (c & 0x000000FF) # Blue.
+    return r, g, b
