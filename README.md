@@ -124,3 +124,12 @@ Computer の世界で
 \frac{|ax_1 + by_1 + c|}{\sqrt{a^2 + b^2}}
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cfrac%7B%7Cax_1+%2B+by_1+%2B+c%7C%7D%7B%5Csqrt%7Ba%5E2+%2B+b%5E2%7D%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+## 直線で囲まれた領域の面積
+### ヘロンの公式
+三角形の各辺の長さを a, b, c, この合計を2で割ったものをsとすると、三角形の面積Sは
+![\begin{align*}
+S = \sqrt{s(s-a)(s-b)(s-c)}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AS+%3D+%5Csqrt%7Bs%28s-a%29%28s-b%29%28s-c%29%7D%0A%5Cend%7Balign%2A%7D%0A)
+で求められる。
