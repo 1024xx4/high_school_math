@@ -117,3 +117,10 @@ Computer の世界で
 - Compiler の性能が向上している現在、処理速度は気にするほどのものではない。
 - 数値 Data を扱う場合は Program のわかりやすさを優先して算術演算を利用するべき。
 
+
+# 便利な公式
+## 点から直線までの距離を求める公式
+![\begin{align*}
+\frac{|ax_1 + by_1 + c|}{\sqrt{a^2 + b^2}}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cfrac%7B%7Cax_1+%2B+by_1+%2B+c%7C%7D%7B%5Csqrt%7Ba%5E2+%2B+b%5E2%7D%7D%0A%5Cend%7Balign%2A%7D%0A)
