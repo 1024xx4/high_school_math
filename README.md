@@ -135,3 +135,11 @@ S = \sqrt{s(s-a)(s-b)(s-c)}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AS+%3D+%5Csqrt%7Bs%28s-a%29%28s-b%29%28s-c%29%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 で求められる。
+
+# 第4章 ベクトル
+## ベクトルとは
+**方向**と**大きさ**で１つの意味を持つ量のこと。
+- 数学の世界では矢印の向きで方向、長さで大きさを表す。
+- ベクトルを扱うときは方向と大きさが重要であり、位置はどこでもかまわない。
+- 座標の原点を始点とするベクトルを**位置ベクトル**という。
+
