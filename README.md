@@ -143,3 +143,10 @@ S = \sqrt{s(s-a)(s-b)(s-c)}
 - ベクトルを扱うときは方向と大きさが重要であり、位置はどこでもかまわない。
 - 座標の原点を始点とするベクトルを**位置ベクトル**という。
 
+## ベクトルの大きさ
+三平方の定理を使って求めることができる。  
+ex).  
+![\begin{align*}
+\left|\vec{OA}\right|=\sprt{2^2+3^2}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cleft%7C%5Cvec%7BOA%7D%5Cright%7C%3D%5Csprt%7B2%5E2%2B3%5E2%7D%0A%5Cend%7Balign%2A%7D%0A)
