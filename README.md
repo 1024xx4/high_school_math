@@ -150,3 +150,20 @@ ex).
 \left|\vec{OA}\right|=\sprt{2^2+3^2}
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cleft%7C%5Cvec%7BOA%7D%5Cright%7C%3D%5Csprt%7B2%5E2%2B3%5E2%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+
+## 内積の性質
+### 内積の結果を見ると２つのベクトルの位置関係がわかる
+大きさが１の単位ベクトルで内積を計算すると必ずー１～１の値になる。
+
+内積の結果 | ２つのベクトルが作る角度
+--- | ---
+正 | 90度未満(鋭角)
+０ | 直角
+負 | 90度以上(鈍角)
+
+## ベクトルの外積
+1. 外積は２つのベクトルに垂直なベクトルになる。
+2. そのベクトルの大きさは、２つのベクトルが作る平行四辺形の面積と等しい。
+
+
