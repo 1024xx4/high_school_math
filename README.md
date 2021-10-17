@@ -330,3 +330,9 @@ Bigdata のように大量にある情報の中から必要な情報を抜き出
 --- | --- | ---
 積の法則 | ２つの事象、A と B があり、A が a通り、B が b通りあるときの「場合の数」を求める法則| a * b 通り
 和の法則 | ２つの事象、 A と B があり、どちらしか起こらないとして A が a通り、B が b通りあるときに、どちらかが起こる「場合の数」を求める法則 | a + b通り
+
+### 順列
+用語 | 意味 | 例・式
+--- | --- | ---
+樹形図 | 木の枝が伸びていくような形の図
+順列 | 順番を考えて並べること | ![\begin{align*}{}_n P_r\end{align*}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+P_r%0A%5Cend%7Balign%2A%7D%0A)
