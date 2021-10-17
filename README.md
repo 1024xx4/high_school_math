@@ -305,10 +305,13 @@ A という集合が、別の U という集合に全て含まれている時に
 という記号で表す。
 
 ### 集合と Database
+
 Bigdata のように大量にある情報の中から必要な情報を抜き出して Database を構築・分析・活用するには集合の知識が役立つ。
 
 ## 順列と組み合わせ
+
 ### 場合の数
+
 そこで起こりうる事象の数のこと。  
 確率を求めるときに必要な値。
 
@@ -326,13 +329,30 @@ Bigdata のように大量にある情報の中から必要な情報を抜き出
 事象 | 施行の結果として起こる出来事。 | １がでた。
 
 ### 場合の数の求め方
+
 用語 | 意味 | 算出式
 --- | --- | ---
 積の法則 | ２つの事象、A と B があり、A が a通り、B が b通りあるときの「場合の数」を求める法則| a * b 通り
 和の法則 | ２つの事象、 A と B があり、どちらしか起こらないとして A が a通り、B が b通りあるときに、どちらかが起こる「場合の数」を求める法則 | a + b通り
 
 ### 順列
+
 用語 | 意味 | 例・式
 --- | --- | ---
 樹形図 | 木の枝が伸びていくような形の図
 順列 | 順番を考えて並べること | ![\begin{align*}{}_n P_r\end{align*}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+P_r%0A%5Cend%7Balign%2A%7D%0A)
+
+### 階乗
+
+用語 | 意味 | 式・例
+--- | --- | ---
+階乗 | 1から n までの自然数を掛け合わせたもの | ![\begin{align*}n!\end{align*}](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0An%21%0A%5Cend%7Balign%2A%7D%0A)
+
+### 重複順列
+
+同じものを使ってもよいという条件のもとで順番に並べること。
+
+![\begin{align*} {}_n \Pi_r = n^r \end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+%5CPi_r+%3D+n%5Er%0A%5Cend%7Balign%2A%7D%0A)
+
+で場合の数を計算できる
