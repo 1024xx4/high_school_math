@@ -355,4 +355,21 @@ Bigdata のように大量にある情報の中から必要な情報を抜き出
 ![\begin{align*} {}_n \Pi_r = n^r \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+%5CPi_r+%3D+n%5Er%0A%5Cend%7Balign%2A%7D%0A)
 
-で場合の数を計算できる
+で場合の数を計算できる。
+
+### 組み合わせ
+順番は考慮せずに選び方だけを重視するもの
+
+![\begin{align*}
+{}_n C_r
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+C_r%0A%5Cend%7Balign%2A%7D%0A)
+
+のように表す。C は、combination の頭文字。
+
+![\begin{align*}
+{}_n C_r = \frac{{}_n P_r}{r!}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+C_r+%3D+%5Cfrac%7B%7B%7D_n+P_r%7D%7Br%21%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+で計算することができる。
