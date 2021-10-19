@@ -358,45 +358,62 @@ Bigdata のように大量にある情報の中から必要な情報を抜き出
 で場合の数を計算できる。
 
 ### 組み合わせ
+
 順番は考慮せずに選び方だけを重視するもの
 
-![\begin{align*}
-{}_n C_r
-\end{align*}
+![\begin{align*} {}_n C_r \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+C_r%0A%5Cend%7Balign%2A%7D%0A)
 
 のように表す。C は、combination の頭文字。
 
-![\begin{align*}
-{}_n C_r = \frac{{}_n P_r}{r!}
-\end{align*}
+![\begin{align*} {}_n C_r = \frac{{}_n P_r}{r!} \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+C_r+%3D+%5Cfrac%7B%7B%7D_n+P_r%7D%7Br%21%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 で計算することができる。
 
 ## 確率
+
 ### 機械学習
-大量の Data を使って反復的に学習することによって、何らかの特徴を見つけ出す技術。  
+
+大量の Data を使って反復的に学習することによって、何らかの特徴を見つけ出す技術。
+
 - ECサイトのあなたにおすすめの商品
 - 文字をカメラで撮影するだけで翻訳してくれる Application.
 
 など。機会学習には「確率」や「乱数」が必須知識。
 
 ### 確率
+
 ある施行を行ったとき、その結果として起こりうるすべての事象のうち、特定の事象になる割合のこと。
 
 確率 p の範囲は必ず
 
-![\begin{align*}
-0 \leqq p \leqq 1
-\end{align*}
+![\begin{align*} 0 \leqq p \leqq 1 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A0+%5Cleqq+p+%5Cleqq+1%0A%5Cend%7Balign%2A%7D%0A)
 
 になる。p = 0 の場合は、その事象が起こる可能性がないことを表し、p = 1 であればその事象が必ず起こることになる。
 
 ## 数学的確率と統計的確率
+
 ### 数学的確率
+
 それぞれの事象がほぼ同じ程度で発生することが予想されることを「同様に確からしい」と表現し、ある事象A が起こる確率p のこと。
 
 ### 統計的確率
+
 過去の Data をもとに計算した値で、Data 数が増えれば変化する可能性のある確率のこと。
+
+# 統計と乱数
+
+## 母集団と標本
+
+### 母集団
+
+本当に調べたい集団全体のこと。
+
+### 標本
+
+母集団の中から無作為に選んだ集団のこと。
+
+### 推測統計学
+標本から母集団を推測することを研究する領域。
