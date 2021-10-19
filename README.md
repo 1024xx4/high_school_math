@@ -373,3 +373,24 @@ Bigdata のように大量にある情報の中から必要な情報を抜き出
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%7B%7D_n+C_r+%3D+%5Cfrac%7B%7B%7D_n+P_r%7D%7Br%21%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 で計算することができる。
+
+## 確率
+### 機械学習
+大量の Data を使って反復的に学習することによって、何らかの特徴を見つけ出す技術。  
+- ECサイトのあなたにおすすめの商品
+- 文字をカメラで撮影するだけで翻訳してくれる Application.
+
+など。機会学習には「確率」や「乱数」が必須知識。
+
+### 確率
+ある施行を行ったとき、その結果として起こりうるすべての事象のうち、特定の事象になる割合のこと。
+
+確率 p の範囲は必ず
+
+![\begin{align*}
+0 \leqq p \leqq 1
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A0+%5Cleqq+p+%5Cleqq+1%0A%5Cend%7Balign%2A%7D%0A)
+
+になる。p = 0 の場合は、その事象が起こる可能性がないことを表し、p = 1 であればその事象が必ず起こることになる。
+
