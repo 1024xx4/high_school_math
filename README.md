@@ -529,3 +529,43 @@ T = \frac{x_i  -  \bar{x}}{s} 10 + 50
 
 ### 無相関
 散布図で点群がバラバラな場合。Data に関係性は見られないと判断する。
+
+## 共分散と相関係数
+### 共分散
+![\begin{align*}
+s_{xy} = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0As_%7Bxy%7D+%3D+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_i+-+%5Cbar%7Bx%7D%29%28y_i+-+%5Cbar%7By%7D%29%0A%5Cend%7Balign%2A%7D%0A)
+
+関係性を調べる２つの Data のそれぞれの値からそれぞれの値の平均値を引いた値を掛け算した時に
+
+- 答えが正の値になるのは x と y の両方が平均値よりも大きい、もしくは小さいとき。
+- 答えが負の値になるのは、一方が平均値より大きくて、もう一方が平均値よりも小さいとき。
+
+すべての値についてこの値を調べて符号を見ることで２つの関係性を理解すること。  
+※代表値として平均値を使う。
+
+### 相関係数
+**共分散**の単位が定まらず評価が難しいところを**標準化**したもの。  
+必ずー１～１の値になり、一般的に
+
+相関係数 | 意味
+--- | ---
+0 ~ 0.2 | ほとんど相関がない
+0.2 ~ 0.4 | やや相関がある
+0.4 ~ 0.7 | かなり相関がある
+0.7 ~ 1.0 | 強い相関がある
+
+という言葉に置き換えて使用される。（※負の値でも相関の強さを示す意味は同じ）
+
+相関係数は、書きの式で求められる。
+
+![\begin{align*}
+r_{xy}
+= \frac{s_{xy}}{s_x s_y}
+= \frac{\sum_{i = 1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i = 1}^n (x_i - \bar{x})^2}\sqrt{\sum_{i = 1}^n (y_i - \bar{y})^2}}
+= \frac{1}{n} \sum_{i = 1}^n \frac{x_i - \bar{x}}{s_x} \cdot \frac{y_i - \bar{y}}{s_y}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Ar_%7Bxy%7D%0A%3D+%5Cfrac%7Bs_%7Bxy%7D%7D%7Bs_x+s_y%7D%0A%3D+%5Cfrac%7B%5Csum_%7Bi+%3D+1%7D%5En+%28x_i+-+%5Cbar%7Bx%7D%29%28y_i+-+%5Cbar%7By%7D%29%7D%7B%5Csqrt%7B%5Csum_%7Bi+%3D+1%7D%5En+%28x_i+-+%5Cbar%7Bx%7D%29%5E2%7D%5Csqrt%7B%5Csum_%7Bi+%3D+1%7D%5En+%28y_i+-+%5Cbar%7By%7D%29%5E2%7D%7D%0A%3D+%5Cfrac%7B1%7D%7Bn%7D+%5Csum_%7Bi+%3D+1%7D%5En+%5Cfrac%7Bx_i+-+%5Cbar%7Bx%7D%7D%7Bs_x%7D+%5Ccdot+%5Cfrac%7By_i+-+%5Cbar%7By%7D%7D%7Bs_y%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+
