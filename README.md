@@ -568,4 +568,8 @@ r_{xy}
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Ar_%7Bxy%7D%0A%3D+%5Cfrac%7Bs_%7Bxy%7D%7D%7Bs_x+s_y%7D%0A%3D+%5Cfrac%7B%5Csum_%7Bi+%3D+1%7D%5En+%28x_i+-+%5Cbar%7Bx%7D%29%28y_i+-+%5Cbar%7By%7D%29%7D%7B%5Csqrt%7B%5Csum_%7Bi+%3D+1%7D%5En+%28x_i+-+%5Cbar%7Bx%7D%29%5E2%7D%5Csqrt%7B%5Csum_%7Bi+%3D+1%7D%5En+%28y_i+-+%5Cbar%7By%7D%29%5E2%7D%7D%0A%3D+%5Cfrac%7B1%7D%7Bn%7D+%5Csum_%7Bi+%3D+1%7D%5En+%5Cfrac%7Bx_i+-+%5Cbar%7Bx%7D%7D%7Bs_x%7D+%5Ccdot+%5Cfrac%7By_i+-+%5Cbar%7By%7D%7D%7Bs_y%7D%0A%5Cend%7Balign%2A%7D%0A)
 
+## Data から推測する
+集まった Data を分析して、そこから何かしらの傾向や性質を見つけ出すこと。
 
+## 移動平均法
+注目 Data を中心に前後いくつかの平均値をとり、その値で注目 Data の値を置き換える方法。
