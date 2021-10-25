@@ -591,3 +591,6 @@ slope = \frac{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\frac{1}{
 Intercept = \frac{1}{n}\sum_{i=1}^{n}y_i - (slope \cdot \frac{1}{n}\sum_{i=1}^{n}x_i)
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AIntercept+%3D+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dy_i+-+%28slope+%5Ccdot+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dx_i%29%0A%5Cend%7Balign%2A%7D%0A)
+
+## 回帰分析
+回帰直線を利用して値を検証したり、未来を予測すること。
