@@ -573,3 +573,21 @@ r_{xy}
 
 ## 移動平均法
 注目 Data を中心に前後いくつかの平均値をとり、その値で注目 Data の値を置き換える方法。
+
+## 回帰直線
+散布図の点群の間をそれぞれの点とのずれの合計値が最小になるようにした直線。  
+その傾きと切片は、次の式で求めることができる。
+
+**傾き**
+
+![\begin{align*}
+slope = \frac{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\frac{1}{n}\sum_{i=1}^n(x_i - \bar{x})^2}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Aslope+%3D+%5Cfrac%7B%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_i+-+%5Cbar%7Bx%7D%29%28y_i+-+%5Cbar%7By%7D%29%7D%7B%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5En%28x_i+-+%5Cbar%7Bx%7D%29%5E2%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+**切片**
+
+![\begin{align*}
+Intercept = \frac{1}{n}\sum_{i=1}^{n}y_i - (slope \cdot \frac{1}{n}\sum_{i=1}^{n}x_i)
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AIntercept+%3D+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dy_i+-+%28slope+%5Ccdot+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dx_i%29%0A%5Cend%7Balign%2A%7D%0A)
