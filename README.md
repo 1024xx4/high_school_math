@@ -603,3 +603,75 @@ Intercept = \frac{1}{n}\sum_{i=1}^{n}y_i - (slope \cdot \frac{1}{n}\sum_{i=1}^{n
 ### 乱数を使うときに注意すること
 計算式が発生する乱数には必ず何かの周期性がある。乱数を求める要素のことを**乱数の種(シード: seed)**という。  
 ほとんどのPrograming 言語には乱数の種を初期化する命令があり、Computer の System 時刻と組み合わせるて実行するのが一般的。
+
+# 微分・積分
+### 微分
+変化の様子を分析するための道具
+
+## 変化を知る手がかり
+曲線の山の頂上を正確に見つける作業
+1. 隣り合う２つの年度の差分をとる
+2. その差分を使って Graph を描く
+
+## 微分とは
+連続して変化する値の、ごく微かな部分に注目して変化の様子を調べること。
+
+### 変化率
+変化の様子、
+
+![\begin{align*}
+\frac{\Delta y}{\Delta x}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cfrac%7B%5CDelta+y%7D%7B%5CDelta+x%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+という比で表せる値。
+
+### 微分係数
+![\begin{align*}
+\lim_{h \to 0} \frac{f(a + h)-f(a)}{h}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Clim_%7Bh+%5Cto+0%7D+%5Cfrac%7Bf%28a+%2B+h%29-f%28a%29%7D%7Bh%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+のように表す。「h が限りなく０にちかづくとき」という意味で、０になることはない。  
+微分係数とは、**ある点における変化率**
+
+## 微分する
+変化の様子を見る、という意味。x の値をほんの少しずつ動かしながら、y の値がどう変化するかを調べている。
+
+一般式で表すと
+![\begin{align*}
+\lim_{n \to 0} \frac{f(x + h) - f(x)}{h}
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Clim_%7Bn+%5Cto+0%7D+%5Cfrac%7Bf%28x+%2B+h%29+-+f%28x%29%7D%7Bh%7D%0A%5Cend%7Balign%2A%7D%0A)
+
+となり、この式を**関数 f(x) の指導関数**という。
+
+- 微分係数
+- 導関数
+
+どちらも簡単に言えば「変化の様子を見る」、それでけのこと。
+
+## 微分の公式
+
+f(x) | f'(x)
+--- | ---
+k(定数) | 0
+x | 1
+x^n | nx^{n-1}
+
+## 導関数が教えてくれること
+### 極値
+なめらかに連続する山の中にある
+- 谷の底を**極小**
+- 山の頂上を**極大**
+
+という。
+
+## 変曲点
+関数f(x) の変化がもっとも大きな地点。「変化率が高い」「変化が大きい」地点。
+
+<small>
+※極大と極小は、Graph によっては何回も登場することがあり、場合によっては極大値が極小値を下回る（逆もしかり）ことのある。
+極大と極小を最大値と最小値と近藤しないように気をつける
+</small>
+
