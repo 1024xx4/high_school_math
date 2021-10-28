@@ -430,9 +430,9 @@ Data のばらつき具合がひと目でわかる図のこと。
 Data のばらつき状態のこと。
 
 ### 分布曲線
+
 Data のばらつきの様子をなだらかな曲線で表したもの。  
-集団の特徴を分析するときに、度数分布図の形が重要になる。分布曲線の山の形に偏りがあるときは注意が必要になり、平均値だけを見ていても、それが集団の
-一般的な値とは限らなくなる。
+集団の特徴を分析するときに、度数分布図の形が重要になる。分布曲線の山の形に偏りがあるときは注意が必要になり、平均値だけを見ていても、それが集団の 一般的な値とは限らなくなる。
 
 ### 正規分布
 
@@ -446,46 +446,58 @@ ex). 年齢別の身長や体重、桜の開花日や梅雨入りの日、工場
 ## 平均値、中央値、最頻値
 
 ### 代表値
-平均値、中央値、最頻値など、集団の傾向を見るときに使う値。  
+
+平均値、中央値、最頻値など、集団の傾向を見るときに使う値。
 
 ### 平均値
+
 全ての Data を合計して、その Data 数で割った値。
 
-![\begin{align*}
-\bar{x} &= \frac{1}{n} \sum_{i=1}^{n}x_i
-\end{align*}
+![\begin{align*} \bar{x} &= \frac{1}{n} \sum_{i=1}^{n}x_i \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cbar%7Bx%7D+%26%3D+%5Cfrac%7B1%7D%7Bn%7D+%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dx_i%0A%5Cend%7Balign%2A%7D%0A)
 
 集団の中の一般の値と解釈されがち。集団を形成する Data に偏りがないときが前提になる。  
 極端な値に大きく作用される。
 
 ### 中央値（中間地、中位置）
+
 Data を小さい順に並べたときに、順番的に真ん中にくる値。  
 Data が奇数の場合は真ん中の自然数。Data が偶数の時は、真ん中の２つの数字の平均が中央値になる。  
 集団の形が正規分布や一様分布のとき、平均値と中央値ははぼ同じ値になる。偏りがある場合は、代表値としてふさわしいこともある。
 
 ### 最頻値（ Mode ）
+
 集団の中で、度数がもっとも大きな値。  
 ex). 既製服を作る場合は、平均値よりも**最頻値**を利用した方が、より多くの人に Fit する製品を作ることができます。
 
 ## 度数分布図
+
 Data がどのように分布されているか、ひと目で把握できる図。
+
 ### 度数分布図の作り方
+
 1. Data の取り得る範囲を等間隔に分ける(**階級**)
 2. 各階級に含まれる Data 数を数える(**度数**)
 3. 横軸に階級、縦軸に度数をとって棒グラフを作成する
 
 ## 分散と標準偏差
+
 ### 分散
+
 「Data - 平均」を使って求めた値。
+
 ### 標準偏差
+
 **分散**を元の値に戻すためにい平方根をとった値。
 
 ## 偏差値
+
 単純に値でけでは比べられない時の判断基準として使う。
 
 ### 標準化
+
 正規分布にもいりいろな形がある。例えば、
+
 - 平均値が同じでも標準偏差が異なる場合は山の高さが変わる。
 - 標準偏差が同じでも平均値が異なる場合は、山の出現する場所が変わる。
 
@@ -493,47 +505,54 @@ Data がどのように分布されているか、ひと目で把握できる図
 
 標準化した Data で度数分布図を描くと、正規分布の形が統一される。山の中心からどれだけ離れているかを見れば、それがどいう値か判断できるようになる。  
 しかし、
+
 1. 平均が0というのは現実味がない値
 2. 標準化した後の Data は小さな値になる。
 
 ### 標準化の式
+
 平均値が０、分散が１となるように Data を変換する。
 
-![\begin{align*}
-Z = \frac{x_i - \bar{x}}{s}
-\end{align*}
+![\begin{align*} Z = \frac{x_i - \bar{x}}{s} \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AZ+%3D+%5Cfrac%7Bx_i+-+%5Cbar%7Bx%7D%7D%7Bs%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 ### 偏差値
-![\begin{align*}
-T = \frac{x_i  -  \bar{x}}{s} 10 + 50
-\end{align*}
+
+![\begin{align*} T = \frac{x_i - \bar{x}}{s} 10 + 50 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AT+%3D+%5Cfrac%7Bx_i++-++%5Cbar%7Bx%7D%7D%7Bs%7D+10+%2B+50%0A%5Cend%7Balign%2A%7D%0A)
 
-平均の値を50として、そこから Data がどれだけ離れているかを見るようにした値。  
+平均の値を50として、そこから Data がどれだけ離れているかを見るようにした値。
+
 - 利用する時は、基となる集団の形が正規分布になっていることが大前提。Data に偏りがあるときに偏差値を見ても意味がない。
 - 特定の集団の中での位置を示しているだけにすぎない。
 
 ## 関係を調べる
+
 ### 散布図
+
 ２つの Data の関係性を表す図。
 
 ### 相関
+
 **「相関」**とは、**「関係がある」**という意味。
 
 ### 正の相関
+
 散布図で点群が右上がりになっているとき。x の値が増えるにつれて y の値も増えるという関係にある。
 
 ### 負の相関
+
 散布図で点群が右下がりになるとき。x の値が増加すると y の値が減少する関係。
 
 ### 無相関
+
 散布図で点群がバラバラな場合。Data に関係性は見られないと判断する。
 
 ## 共分散と相関係数
+
 ### 共分散
-![\begin{align*}
-s_{xy} = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})
+
+![\begin{align*} s_{xy} = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0As_%7Bxy%7D+%3D+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_i+-+%5Cbar%7Bx%7D%29%28y_i+-+%5Cbar%7By%7D%29%0A%5Cend%7Balign%2A%7D%0A)
 
@@ -546,6 +565,7 @@ s_{xy} = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})
 ※代表値として平均値を使う。
 
 ### 相関係数
+
 **共分散**の単位が定まらず評価が難しいところを**標準化**したもの。  
 必ずー１～１の値になり、一般的に
 
@@ -560,88 +580,89 @@ s_{xy} = \frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})
 
 相関係数は、書きの式で求められる。
 
-![\begin{align*}
-r_{xy}
-= \frac{s_{xy}}{s_x s_y}
-= \frac{\sum_{i = 1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i = 1}^n (x_i - \bar{x})^2}\sqrt{\sum_{i = 1}^n (y_i - \bar{y})^2}}
-= \frac{1}{n} \sum_{i = 1}^n \frac{x_i - \bar{x}}{s_x} \cdot \frac{y_i - \bar{y}}{s_y}
-\end{align*}
+![\begin{align*} r_{xy} = \frac{s_{xy}}{s_x s_y} = \frac{\sum_{i = 1}^n (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum_{i = 1}^n (x_i - \bar{x})^2}\sqrt{\sum_{i = 1}^n (y_i - \bar{y})^2}} = \frac{1}{n} \sum_{i = 1}^n \frac{x_i - \bar{x}}{s_x} \cdot \frac{y_i - \bar{y}}{s_y} \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Ar_%7Bxy%7D%0A%3D+%5Cfrac%7Bs_%7Bxy%7D%7D%7Bs_x+s_y%7D%0A%3D+%5Cfrac%7B%5Csum_%7Bi+%3D+1%7D%5En+%28x_i+-+%5Cbar%7Bx%7D%29%28y_i+-+%5Cbar%7By%7D%29%7D%7B%5Csqrt%7B%5Csum_%7Bi+%3D+1%7D%5En+%28x_i+-+%5Cbar%7Bx%7D%29%5E2%7D%5Csqrt%7B%5Csum_%7Bi+%3D+1%7D%5En+%28y_i+-+%5Cbar%7By%7D%29%5E2%7D%7D%0A%3D+%5Cfrac%7B1%7D%7Bn%7D+%5Csum_%7Bi+%3D+1%7D%5En+%5Cfrac%7Bx_i+-+%5Cbar%7Bx%7D%7D%7Bs_x%7D+%5Ccdot+%5Cfrac%7By_i+-+%5Cbar%7By%7D%7D%7Bs_y%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 ## Data から推測する
+
 集まった Data を分析して、そこから何かしらの傾向や性質を見つけ出すこと。
 
 ## 移動平均法
+
 注目 Data を中心に前後いくつかの平均値をとり、その値で注目 Data の値を置き換える方法。
 
 ## 回帰直線
+
 散布図の点群の間をそれぞれの点とのずれの合計値が最小になるようにした直線。  
 その傾きと切片は、次の式で求めることができる。
 
 **傾き**
 
-![\begin{align*}
-slope = \frac{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\frac{1}{n}\sum_{i=1}^n(x_i - \bar{x})^2}
-\end{align*}
+![\begin{align*} slope = \frac{\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})}{\frac{1}{n}\sum_{i=1}^n(x_i - \bar{x})^2} \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Aslope+%3D+%5Cfrac%7B%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7D%28x_i+-+%5Cbar%7Bx%7D%29%28y_i+-+%5Cbar%7By%7D%29%7D%7B%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5En%28x_i+-+%5Cbar%7Bx%7D%29%5E2%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 **切片**
 
-![\begin{align*}
-Intercept = \frac{1}{n}\sum_{i=1}^{n}y_i - (slope \cdot \frac{1}{n}\sum_{i=1}^{n}x_i)
+![\begin{align*} Intercept = \frac{1}{n}\sum_{i=1}^{n}y_i - (slope \cdot \frac{1}{n}\sum_{i=1}^{n}x_i)
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0AIntercept+%3D+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dy_i+-+%28slope+%5Ccdot+%5Cfrac%7B1%7D%7Bn%7D%5Csum_%7Bi%3D1%7D%5E%7Bn%7Dx_i%29%0A%5Cend%7Balign%2A%7D%0A)
 
 ## 回帰分析
+
 回帰直線を利用して値を検証したり、未来を予測すること。
 
 ## Random に値を選ぶ
+
 ### 乱数
+
 並びに規則性がなく、それぞれの数の出現回数がほぼ同じであるもの。  
 <small>※ **擬似乱数**: Computer が生成した乱数。何らかの計算式で求められている。</small>
 
 ### 乱数を使うときに注意すること
+
 計算式が発生する乱数には必ず何かの周期性がある。乱数を求める要素のことを**乱数の種(シード: seed)**という。  
 ほとんどのPrograming 言語には乱数の種を初期化する命令があり、Computer の System 時刻と組み合わせるて実行するのが一般的。
 
 # 微分・積分
+
 ### 微分
+
 変化の様子を分析するための道具
 
 ## 変化を知る手がかり
+
 曲線の山の頂上を正確に見つける作業
+
 1. 隣り合う２つの年度の差分をとる
 2. その差分を使って Graph を描く
 
 ## 微分とは
+
 連続して変化する値の、ごく微かな部分に注目して変化の様子を調べること。
 
 ### 変化率
+
 変化の様子、
 
-![\begin{align*}
-\frac{\Delta y}{\Delta x}
-\end{align*}
+![\begin{align*} \frac{\Delta y}{\Delta x} \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cfrac%7B%5CDelta+y%7D%7B%5CDelta+x%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 という比で表せる値。
 
 ### 微分係数
-![\begin{align*}
-\lim_{h \to 0} \frac{f(a + h)-f(a)}{h}
-\end{align*}
+
+![\begin{align*} \lim_{h \to 0} \frac{f(a + h)-f(a)}{h} \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Clim_%7Bh+%5Cto+0%7D+%5Cfrac%7Bf%28a+%2B+h%29-f%28a%29%7D%7Bh%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 のように表す。「h が限りなく０にちかづくとき」という意味で、０になることはない。  
 微分係数とは、**ある点における変化率**
 
 ## 微分する
+
 変化の様子を見る、という意味。x の値をほんの少しずつ動かしながら、y の値がどう変化するかを調べている。
 
 一般式で表すと
-![\begin{align*}
-\lim_{n \to 0} \frac{f(x + h) - f(x)}{h}
-\end{align*}
+![\begin{align*} \lim_{n \to 0} \frac{f(x + h) - f(x)}{h} \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Clim_%7Bn+%5Cto+0%7D+%5Cfrac%7Bf%28x+%2B+h%29+-+f%28x%29%7D%7Bh%7D%0A%5Cend%7Balign%2A%7D%0A)
 
 となり、この式を**関数 f(x) の指導関数**という。
@@ -660,14 +681,18 @@ x | 1
 x^n | nx^{n-1}
 
 ## 導関数が教えてくれること
+
 ### 極値
+
 なめらかに連続する山の中にある
+
 - 谷の底を**極小**
 - 山の頂上を**極大**
 
 という。
 
 ## 変曲点
+
 関数f(x) の変化がもっとも大きな地点。「変化率が高い」「変化が大きい」地点。
 
 <small>
@@ -675,3 +700,25 @@ x^n | nx^{n-1}
 極大と極小を最大値と最小値と近藤しないように気をつける
 </small>
 
+# 積分とは
+
+1. 積分は面積を扱う
+2. 積分は微分の逆演算
+
+## 変化を積み重ねる
+「ある部分を積み重ねる」から**積分**。積み重ねとは、足し算そのもの
+
+## 積分する
+連続して変化する値を足して、合計を求める
+
+式で表すと
+
+![\begin{align*}
+\int f(x)dx
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cint+f%28x%29dx%0A%5Cend%7Balign%2A%7D%0A)
+
+上記の式の意味は、「関数 f(x)に、ごく小さな値 dx を与えたときの合計を求める」と思えばよい。
+
+曲線で囲まれた領域の面積を求める公式はないため、極細の棒を敷き詰め、それを加算して面積を求めるという方法を利用する。
+そのため、棒の幅が広いと誤差が生じてしまう。「ごく小さな値」というのが大事になる。
