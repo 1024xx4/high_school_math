@@ -722,3 +722,23 @@ x^n | nx^{n-1}
 
 曲線で囲まれた領域の面積を求める公式はないため、極細の棒を敷き詰め、それを加算して面積を求めるという方法を利用する。
 そのため、棒の幅が広いと誤差が生じてしまう。「ごく小さな値」というのが大事になる。
+
+## 定積分・不定積分
+### 定積分
+範囲を決めて積分をすること。
+
+![\begin{align*}
+\int_a^b f(x)dx
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cint_a%5Eb+f%28x%29dx%0A%5Cend%7Balign%2A%7D%0A)
+
+「f(x)　に a から b までの範囲で、ごく小さな値 dx を入れて積分する」という意味になる。
+
+### 不定積分
+積分する範囲を指定していない式のこと。
+
+![\begin{align*}
+\int f(x)dx
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cint+f%28x%29dx%0A%5Cend%7Balign%2A%7D%0A)
+
