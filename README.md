@@ -742,3 +742,13 @@ x^n | nx^{n-1}
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cint+f%28x%29dx%0A%5Cend%7Balign%2A%7D%0A)
 
+### 原始関数
+微分して
+
+![\begin{align*}
+f(x)
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Af%28x%29%0A%5Cend%7Balign%2A%7D%0A)
+
+になる関数のこと。  
+原始関数を求めることを「f((x) を不定積分する」と言う。
