@@ -9,6 +9,7 @@ jupyter = "*"
 sympy = "*"
 pandas = "*"
 scipy = "*"
+pillow = "*"
 
 [dev-packages]
 
