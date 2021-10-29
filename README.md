@@ -765,3 +765,19 @@ x^n | nx^{n-1}
 ![\begin{align*} \int_a^b f(x)dx = [F(x)]_a^b = F(b) - F(a)
 \end{align*}
 ](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0A%5Cint_a%5Eb+f%28x%29dx+%3D+%5BF%28x%29%5D_a%5Eb+%3D+F%28b%29+-+F%28a%29%0A%5Cend%7Balign%2A%7D%0A)
+
+# 道具としての微分・積分
+
+微分 | 変化の様子を知る為の道具。
+--- | ---
+積分 | ごく小さな部部の合計を知るための道具
+
+## 曲線の接線
+微分係数とは、
+
+![\begin{align*}
+y = f(x)
+\end{align*}
+](https://render.githubusercontent.com/render/math?math=%5Cdisplaystyle+%5Cbegin%7Balign%2A%7D%0Ay+%3D+f%28x%29%0A%5Cend%7Balign%2A%7D%0A)
+
+の x = a におけいる接線の傾きである。
